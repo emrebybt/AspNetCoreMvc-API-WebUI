@@ -20,7 +20,7 @@ namespace AspNetCoreMvc_API_WebUI.Controllers
         {
             var http = _httpClientFactory.CreateClient();
             var token = HttpContext.Session.GetJson<UserViewModel>("user").Token;
-            http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(JwtBearerDefaults.AuthenticationScheme, token);
             var result = await http.GetAsync("https://localhost:7049/api/Employee");
             if(result.StatusCode == System.Net.HttpStatusCode.OK)
             {
