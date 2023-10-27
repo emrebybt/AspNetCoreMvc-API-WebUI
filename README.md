@@ -22,6 +22,6 @@ Due to API Jwt Authentication, registration and login are required to fetch data
 
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](https://prnt.sc/PFc8beblDzTr)
+![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/10/28/yVp2xp.png)
 
   
